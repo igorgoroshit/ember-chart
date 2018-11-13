@@ -2,14 +2,24 @@
  * @module components
  *
  */
-import { htmlSafe } from '@ember/string';
-import Component from '@ember/component';
-import { isEmpty, isNone } from '@ember/utils';
-import { get, computed, set } from '@ember/object';
-import { camelize } from '@ember/string';
-import layout from '../templates/components/ember-chart';
+
+
+import Ember from 'ember';
+//import Chart from 'chartjs';
 import ChartObject from '../utils/chart-object';
-import Chart from 'chartjs';
+import layout from '../templates/components/ember-chart';
+
+const {
+	Component,
+	isEmpty,
+	isNone,
+	get,
+	set,
+	computed,
+} = Ember;
+
+var camelize = Ember.String.camelize;
+var htmlSafe = Ember.String.htmlSafe;
 
 /***/
 

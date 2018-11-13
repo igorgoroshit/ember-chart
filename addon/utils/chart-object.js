@@ -2,16 +2,23 @@
  * @module Utils
  *
  */
-import { A, isArray } from '@ember/array';
-import { isEmpty, isNone } from '@ember/utils';
-import { assert } from '@ember/debug';
-import { on } from '@ember/object/evented';
-import EmberObject, {
-  observer,
-  get,
-  set,
-  computed
-} from '@ember/object';
+import Ember from 'ember';
+
+const {
+	A,
+	isArray,
+	isEmpty,
+	isNone,
+	assert,
+	observer,
+	get,
+	set,
+	computed
+} = Ember;
+
+
+var on 					= Ember.on;
+var EmberObject = Ember.Object;
 
 /**
  * `Utils/ChartObject`
